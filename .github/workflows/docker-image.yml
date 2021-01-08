@@ -15,9 +15,9 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Push to Docker Hub
-        uses: docker/build-push-action@v1
+        uses: mr-smithers-excellent/docker-build-push@v4
         with:
+          image: vikcy12345/docker
+          registory: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: vicku12345/docker
-          tag_with_ref: true
