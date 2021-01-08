@@ -19,5 +19,5 @@ jobs:
         with:
           image: vicky12345/private-github-action
           registry: docker.io
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: vicky12345
+          password: P@ssword1994
